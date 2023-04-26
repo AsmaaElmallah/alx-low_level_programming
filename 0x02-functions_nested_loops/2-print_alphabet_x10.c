@@ -1,20 +1,12 @@
-#include "main"
-/**
- * Description: print_alphabet_x10 -prints the alphabet 10 times.
- *
- * Return: Always 0 (Success)
-*/
-void print_alphabet_x10(void)
-{
-int i;
-int j;
+#include "main.h"
 
-for (j = 1; i <= 10; i++)
+/**
+* main - check the code.
+*
+* Return: Always 0.
+*/
+int main(void)
 {
-for (j = 97; j <= 122; j++)
-{
-	_putchar(j);
-}
-_putchar('\n');
-}
+print_alphabet_x10();
+return (0);
 }
