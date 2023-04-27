@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - print numbers 1 - 100 followed by anew line
  * numbers that multibles of 3 print fizz
@@ -23,6 +23,7 @@ int main(void)
 			printf("FizzBuzz");
 		else
 			printf("%d" . num);
+
 		if (num != 100)
 			printf(" ");
 		else
