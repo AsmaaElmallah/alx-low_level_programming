@@ -1,18 +1,19 @@
 #include "main.h"
 /**
- * _strlen_recurion - returns lenght of string.
- * @s: pointer to string.
+ * _strlen_recursion - Returns the length of a string.
+ * @s: The string to be measured.
  *
- * Return: lenght of string.
-*/
-
-int _strlen_recurion(char *s)
+ * Return: The length of the string.
+ */
+int _strlen_recursion(char *s)
 {
-int ntr = 0;
+	int longit = 0;
 
-if (*s > '\0')
-{
-ntr += _strlen_recursion(s + 1) + 1;
+	if (*s)
+	{
+		longit++;
+		longit += _strlen_recursion(s + 1);
+	}
+
+	return (longit);
 }
-		return (ntr);
-				}
