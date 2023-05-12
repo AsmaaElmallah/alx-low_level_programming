@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - prints coints left
  * @args: parameter intery
@@ -21,8 +22,10 @@ int main(int args, char *argv[])
 	{
 		printf("0\n");
 		return (0);
-		{
-	for (; c >= 25)
+	}
+	for (; c >= 0;)
+	{
+		if (c >= 25)
 		c -= 25;
 
 	else if (c >= 10)
